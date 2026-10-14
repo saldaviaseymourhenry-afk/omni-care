@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-PH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Shop Omni-care fragrances for women and men, discovery sets, hair serum, and botanical personal care in the Philippines.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://www.omni-care.store/">
+  <meta name="theme-color" content="#171713">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Omni-care.store">
+  <meta property="og:title" content="Omni-care Philippines — Fragrances & Personal Care">
+  <meta property="og:description" content="Distinctive women's and men's scents, discovery sets, hair serum, and botanical personal care for everyday rituals.">
+  <meta property="og:url" content="https://www.omni-care.store/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Omni-care Philippines — Fragrances & Personal Care">
+  <meta name="twitter:description" content="Distinctive scents and intentional personal care, available in Philippine pesos.">
+  <title>Omni-care Philippines — Fragrances & Personal Care</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OnlineStore",
+    "name": "Omni-care.store",
+    "description": "Philippine online store for women's and men's fragrances, discovery sets, hair serum, and botanical personal care.",
+    "email": "ceo@omni-care.store",
+    "telephone": "+63 906 840 3075",
+    "currenciesAccepted": "PHP",
+    "areaServed": { "@type": "Country", "name": "Philippines" },
+    "knowsAbout": [
+      "Women's fragrances",
+      "Men's fragrances",
+      "Perfume discovery sets",
+      "Hair serum",
+      "Rosemary hair treatment",
+      "Botanical personal care"
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+  <link rel="stylesheet" href="brand.css">
+  <link rel="stylesheet" href="pricing.css">
+  <link rel="stylesheet" href="hero-campaign.css">
+  <link rel="stylesheet" href="hero-final.css">
+</head>
+<body>
+  <div class="announcement">Philippine peso pricing · Flat ₱90 delivery per order</div>
+  <header class="site-header">
+    <a class="wordmark" href="#/">OMNI<span>•</span>CARE</a>
+    <nav id="primaryNav" aria-label="Primary navigation">
+      <a href="#/shop/scents">Scents</a><a href="#/shop/womens">Women's Collection</a><a href="#/shop/mens">Men's Collection</a><a href="#/shop/personal-care">Personal Care</a><a href="#/story">Our Story</a><a href="#/contact">Contact</a>
+    </nav>
+    <div class="header-actions"><button class="icon-btn" id="searchButton" aria-label="Search">⌕</button><button class="menu-btn" id="menuButton" aria-label="Open menu" aria-expanded="false">Menu</button><button class="bag-btn" id="bagButton" aria-label="Open shopping bag">Bag <span id="bagCount">0</span></button></div>
+  </header>
+  <main id="app"></main>
+  <footer><div><a class="wordmark" href="#/">OMNI<span>•</span>CARE</a><p>Distinctive scent. Intentional care.</p></div><div><strong>Shop</strong><a href="#/shop/scents">Scents</a><a href="#/shop/womens">Women's Collection</a><a href="#/shop/mens">Men's Collection</a><a href="#/shop/personal-care">Personal Care</a></div><div><strong>Visit</strong><a href="#/story">Our Story</a><a href="#/contact">Contact</a></div><p class="copyright">© 2026 Omni-care.store</p></footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="searchDrawer" aria-hidden="true"><button class="close" data-close aria-label="Close">×</button><p class="eyebrow">Find your ritual</p><h2 class="display">Search</h2><label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="Search scents or care" autocomplete="off"></label><div id="searchResults" class="search-results"></div></aside>
+  <aside class="drawer bag-drawer" id="bagDrawer" aria-hidden="true"><button class="close" data-close aria-label="Close">×</button><p class="eyebrow">Your selection</p><h2 class="display">Shopping bag</h2><div id="bagItems"></div><div class="bag-summary" id="bagSummary"></div></aside>
+  <section class="checkout-modal" id="checkoutModal" aria-hidden="true"><button class="close" data-close aria-label="Close">×</button><div class="checkout-copy"><p class="eyebrow">Secure checkout</p><h2 class="display">Delivery details</h2><p>Your order is almost ready. Enter your details to continue to secure payment.</p></div><form id="checkoutForm"><div class="field-row"><label>First name<input name="firstName" required></label><label>Last name<input name="lastName" required></label></div><label>Email address<input name="email" type="email" required></label><label>Delivery address<input name="address" required></label><div class="field-row"><label>City<input name="city" required></label><label>Country<select name="country"><option selected>Philippines</option></select></label></div><div class="checkout-total" id="checkoutTotal"></div><button class="button full" type="submit">Continue to secure payment</button><p class="fine-print">Payment processing can be connected to your preferred provider at launch.</p></form></section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="data/products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
