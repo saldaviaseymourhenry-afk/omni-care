@@ -1,0 +1,48 @@
+/* Final hero composition: image and copy share one uninterrupted frame. */
+.hero-campaign.hero-fullframe .hero-copy {
+  width: min(590px, 46vw);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.hero-campaign.hero-fullframe .hero-copy h1 {
+  font-size: clamp(4rem, 6.6vw, 7.2rem);
+  line-height: .9;
+  text-shadow: 0 3px 26px rgba(0, 0, 0, .62);
+}
+
+.hero-campaign.hero-fullframe .hero-copy .eyebrow,
+.hero-campaign.hero-fullframe .hero-copy > p:not(.eyebrow) {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .72);
+}
+
+@media (max-width: 900px) {
+  .hero-campaign.hero-fullframe .hero-copy {
+    left: 6vw;
+    right: 6vw;
+    width: auto;
+    padding: 0;
+    background: transparent;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-campaign.hero-fullframe {
+    min-height: 520px;
+    height: clamp(520px, calc(100dvh - 100px), 680px);
+  }
+
+  .hero-campaign.hero-fullframe .hero-copy {
+    left: 5vw;
+    right: 5vw;
+    bottom: 1.35rem;
+    padding: 0;
+  }
+
+  .hero-campaign.hero-fullframe .hero-copy h1 {
+    font-size: clamp(2.9rem, 14vw, 3.8rem);
+  }
+}
